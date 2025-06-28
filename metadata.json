@@ -1,0 +1,6 @@
+{
+  "name": "React Prompt Engineering Infographic",
+  "description": "An interactive, visually-rich web application built with React and Tailwind CSS that presents a comprehensive infographic on prompt engineering techniques. Based on Google's official guide, it covers fundamental to advanced methods, code prompting, best practices, and features interactive modals and diagrams.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
