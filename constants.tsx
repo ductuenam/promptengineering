@@ -98,7 +98,7 @@ export const MODAL_CONTENT: Record<ModalId, { title: string, content: React.Reac
                         <li><strong className="text-primary-main">Temperature = 0 (hoặc rất thấp, ~0.1):</strong> Dùng cho các tác vụ cần tính chính xác, không có chỗ cho sự sáng tạo. Ví dụ: trích xuất thông tin, tóm tắt tài liệu pháp lý/y tế, lập trình, tính toán.</li>
                         <li><strong className="text-primary-main">Temperature = 0.5 - 0.7:</strong> Phù hợp cho các tác vụ cần một chút sáng tạo nhưng vẫn giữ được sự mạch lạc. Ví dụ: viết nội dung blog, tạo ý tưởng quảng cáo cơ bản.</li>
                         <li><strong className="text-primary-main">Temperature = 0.8 - 1.0:</strong> Dùng cho các tác vụ đòi hỏi sự sáng tạo cao, đa dạng ý tưởng. Ví dụ: viết truyện, thơ, kịch bản, brainstorm ý tưởng mới lạ.</li>
-                        <li><strong className="text-primary-main">Temperature > 1.0:</strong> Chỉ nên dùng để thử nghiệm, vì kết quả có thể trở nên rất ngẫu nhiên, khó hiểu hoặc không liên quan.</li>
+                        <li><strong className="text-primary-main">Temperature &gt; 1.0:</strong> Chỉ nên dùng để thử nghiệm, vì kết quả có thể trở nên rất ngẫu nhiên, khó hiểu hoặc không liên quan.</li>
                     </ModalList>
                 </ModalSection>
             </>
@@ -115,7 +115,7 @@ export const MODAL_CONTENT: Record<ModalId, { title: string, content: React.Reac
                         <li><strong className="text-primary-main">K = 1:</strong> Tương đương với "greedy decoding" (giải mã tham lam), luôn chọn từ có xác suất cao nhất. Kết quả rất xác định nhưng có thể thiếu tự nhiên.</li>
                         <li><strong className="text-primary-main">K thấp (~5-20):</strong> Phù hợp cho các tác vụ cần sự chính xác và nhất quán, nhưng vẫn muốn một chút tự nhiên hơn so với K=1. Ví dụ: sinh tiêu đề ngắn gọn, tóm tắt.</li>
                         <li><strong className="text-primary-main">K vừa phải (~30-50):</strong> Cân bằng giữa tính đa dạng và tính phù hợp. Đây thường là điểm khởi đầu tốt cho nhiều tác vụ viết lách thông thường.</li>
-                        <li><strong className="text-primary-main">K cao (>50):</strong> Dành cho các trường hợp cần sự sáng tạo tối đa, brainstorm, hoặc khi bạn muốn mô hình khám phá các cách diễn đạt độc đáo.</li>
+                        <li><strong className="text-primary-main">K cao (&gt;50):</strong> Dành cho các trường hợp cần sự sáng tạo tối đa, brainstorm, hoặc khi bạn muốn mô hình khám phá các cách diễn đạt độc đáo.</li>
                         <li><strong className="text-primary-main">Kết hợp với Temperature:</strong> Top-K và Temperature thường được sử dụng cùng nhau. Top-K giới hạn tập hợp các từ, còn Temperature điều chỉnh phân phối xác suất trong tập hợp đó.</li>
                     </ModalList>
                 </ModalSection>
